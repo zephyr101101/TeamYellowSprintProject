@@ -73,59 +73,93 @@ namespace GenericRPG {
         //lblPlayerHealth.Text = Math.Round(character.Health).ToString();
         //lblEnemyHealth.Text = Math.Round(enemy.Health).ToString();
     }
+    //function to encapsulate the process of combat
+    //called after an ability is used/processed
+    private void combatStuff()
+    {
+            if (enemy.Health <= 0)
+            {
+                character.GainXP(enemy.XpDropped);
+                lblEndFightMessage.Text = "You Gained " + Math.Round(enemy.XpDropped) + " xp!";
+                lblEndFightMessage.Visible = true;
+                Refresh();
+                Thread.Sleep(1200);
+                EndFight();
+                if (character.ShouldLevelUp)
+                {
+                    FrmLevelUp frmLevelUp = new FrmLevelUp();
+                    frmLevelUp.Show();
+                }
+            }
+            else
+            {
+                float prevPlayerHealth = character.Health;
+                enemy.SimpleAttack(character);
+                float playerDamage = (float)Math.Round(prevPlayerHealth - character.Health);
+                lblPlayerDamage.Text = playerDamage.ToString();
+                lblPlayerDamage.Visible = true;
+                tmrPlayerDamage.Enabled = true;
+                if (character.Health <= 0)
+                {
+                    UpdateStats();
+                    game.ChangeState(GameState.DEAD);
+                    lblEndFightMessage.Text = "You Were Defeated!";
+                    lblEndFightMessage.Visible = true;
+                    Refresh();
+                    Thread.Sleep(1200);
+                    EndFight();
+                    FrmGameOver frmGameOver = new FrmGameOver();
+                    frmGameOver.Show();
+                }
+                else
+                {
+                    UpdateStats();
+                }
+            }
+
+        }
     /// <summary>
     /// This function executes on simple attack click
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
+    /// 
     private void btnSimpleAttack_Click(object sender, EventArgs e) {
+    float prevEnemyHealth = enemy.Health;
+    character.SimpleAttack(enemy);
+    float enemyDamage = (float)Math.Round(prevEnemyHealth - enemy.Health);
+    lblEnemyDamage.Text = enemyDamage.ToString();
+    lblEnemyDamage.Visible = true;
+    tmrEnemyDamage.Enabled = true;
+    combatStuff();
+    }
+     //function for ability 2
+    private void btnAttack2_Click(object sender, EventArgs e)
+    {
         float prevEnemyHealth = enemy.Health;
-        character.SimpleAttack(enemy);
+        character.Attack2(enemy);
         float enemyDamage = (float)Math.Round(prevEnemyHealth - enemy.Health);
         lblEnemyDamage.Text = enemyDamage.ToString();
         lblEnemyDamage.Visible = true;
         tmrEnemyDamage.Enabled = true;
-        if (enemy.Health <= 0) {
-            character.GainXP(enemy.XpDropped);
-            lblEndFightMessage.Text = "You Gained " + Math.Round(enemy.XpDropped) + " xp!";
-            lblEndFightMessage.Visible = true;
-            Refresh();
-            Thread.Sleep(1200);
-            EndFight();
-            if (character.ShouldLevelUp) {
-                FrmLevelUp frmLevelUp = new FrmLevelUp();
-                frmLevelUp.Show();
-            }
-        }
-        else {
-            float prevPlayerHealth = character.Health;
-            enemy.SimpleAttack(character);
-            float playerDamage = (float)Math.Round(prevPlayerHealth - character.Health);
-            lblPlayerDamage.Text = playerDamage.ToString();
-            lblPlayerDamage.Visible = true;
-            tmrPlayerDamage.Enabled = true;
-            if (character.Health <= 0) {
-                UpdateStats();
-                game.ChangeState(GameState.DEAD);
-                lblEndFightMessage.Text = "You Were Defeated!";
-                lblEndFightMessage.Visible = true;
-                Refresh();
-                Thread.Sleep(1200);
-                EndFight();
-                FrmGameOver frmGameOver = new FrmGameOver();
-                frmGameOver.Show();
-            }
-            else {
-                UpdateStats();
-            }
-        }
+        combatStuff();
     }
-    /// <summary>
-    /// This function executies on Run button click
-    /// </summary>
-    /// <param name="sender"></param>
-    /// <param name="e"></param>
-    private void btnRun_Click(object sender, EventArgs e) {
+    private void btnWeakenAttack_Click(object sender, EventArgs e)
+    {
+        float prevEnemyHealth = enemy.Health;
+        character.WeakenAttack(enemy);
+        float enemyDamage = (float)Math.Round(prevEnemyHealth - enemy.Health);
+        lblEnemyDamage.Text = enemyDamage.ToString();
+        lblEnemyDamage.Visible = true;
+        tmrEnemyDamage.Enabled = true;
+        combatStuff();
+    }
+        /// <summary>
+        /// This function executies on Run button click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnRun_Click(object sender, EventArgs e) {
         if (rand.NextDouble() < 0.25) {
         lblEndFightMessage.Text = "You Ran Like a Coward!";
         lblEndFightMessage.Visible = true;
@@ -156,5 +190,6 @@ namespace GenericRPG {
             lblEnemyDamage.Top = 52;
         }
     }
+    
     }
 }
