@@ -11,12 +11,29 @@ namespace GameLibrary {
         private const float INIT_SPEED = 2;
         private const float INIT_MANA = 40;
 
+        // New Stats INIT values
+        private const float INIT_STRENGTH = 2;
+        private const float INIT_DEXTERITY = 2;
+        private const float INIT_CONSTITUTION = 2;
+        private const float INIT_INTELLIGENCE = 2;
+        private const float INIT_WISDOM = 2;
+        private const float INIT_CHARISMA = 2;
+        
+
         private const float LVLINC_HEALTH = 20;
         private const float LVLINC_STR = 3;
         private const float LVLINC_DEF = 2;
         private const float LVLINC_LUCK = 1;
         private const float LVLINC_SPEED = 2;
         private const float LVLINC_MANA = 10;
+
+        // New Stats LVLINC values
+        private const float LVLINC_STRENGTH = 1;
+        private const float LVLINC_DEXTERITY = 1;
+        private const float LVLINC_CONSTITUTION = 1;
+        private const float LVLINC_INTELLIGENCE = 1;
+        private const float LVLINC_WISDOM = 1;
+        private const float LVLINC_CHARISMA = 1;
 
         private const float SIMPLEATTACK_RANDOM_AMT = 0.25f;
         #endregion
@@ -27,9 +44,20 @@ namespace GameLibrary {
         public float Health { get; protected set; }
         public float MaxMana { get; protected set; }
         public float Mana { get; protected set; }
+
+        // New Stats
+        public float Strength { get; protected set; }
+        public float Dexterity { get; protected set; }
+        public float Constitution { get; protected set; }
+        public float Intelligence { get; protected set; }
+        public float Wisdom { get; protected set; }
+        public float Charisma { get; protected set; }
+        public float Luck { get; protected set; }
+
+
         public float Str { get; protected set; }
         public float Def { get; protected set; }
-        public float Luck { get; protected set; }
+        
         public float Speed { get; protected set; }
 
         private Random rand;
@@ -50,6 +78,16 @@ namespace GameLibrary {
             Def = INIT_DEF;
             Luck = INIT_LUCK;
             Speed = INIT_SPEED;
+
+            // New Stat Reset Function
+            Strength = INIT_STRENGTH;
+            Dexterity = INIT_DEXTERITY;
+            Constitution = INIT_CONSTITUTION;
+            Intelligence = INIT_INTELLIGENCE;
+            Wisdom = INIT_WISDOM;
+            Charisma = INIT_CHARISMA;
+            Luck = INIT_LUCK;
+
         }
         public void SetLevel(int level) {
             for (int i = 1; i < level; i++) {
@@ -71,6 +109,14 @@ namespace GameLibrary {
             Def += LVLINC_DEF;
             Luck += LVLINC_LUCK;
             Speed += LVLINC_SPEED;
+
+            // New stats increment
+            Strength += LVLINC_STRENGTH;
+            Dexterity += LVLINC_DEXTERITY;
+            Constitution += LVLINC_CONSTITUTION;
+            Intelligence += LVLINC_INTELLIGENCE;
+            Wisdom += LVLINC_WISDOM;
+            Charisma += LVLINC_CHARISMA;
         }
         public void RefillHealthAndMana() {
             Health = MaxHealth;
