@@ -35,6 +35,16 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblPlayerName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.lblPlayerInt = new System.Windows.Forms.Label();
+            this.lblPlayerWis = new System.Windows.Forms.Label();
+            this.lblPlayerChar = new System.Windows.Forms.Label();
+            this.lblPlayerLuck = new System.Windows.Forms.Label();
+            this.lblPlayerCon = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.lblPlayerDamage = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblPlayerXp = new System.Windows.Forms.Label();
@@ -55,21 +65,12 @@
             this.label13 = new System.Windows.Forms.Label();
             this.lblEnemyMana = new System.Windows.Forms.Label();
             this.btnSimpleAttack = new System.Windows.Forms.Button();
-            this.btnMagicAttack = new System.Windows.Forms.Button();
+            this.btnWeakenAttack = new System.Windows.Forms.Button();
             this.btnRun = new System.Windows.Forms.Button();
             this.lblEndFightMessage = new System.Windows.Forms.Label();
             this.tmrPlayerDamage = new System.Windows.Forms.Timer(this.components);
             this.tmrEnemyDamage = new System.Windows.Forms.Timer(this.components);
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.lblPlayerCon = new System.Windows.Forms.Label();
-            this.lblPlayerLuck = new System.Windows.Forms.Label();
-            this.lblPlayerChar = new System.Windows.Forms.Label();
-            this.lblPlayerWis = new System.Windows.Forms.Label();
-            this.lblPlayerInt = new System.Windows.Forms.Label();
+            this.Attack2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCharacter)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -219,6 +220,121 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(227, 396);
             this.panel1.TabIndex = 11;
+            // 
+            // lblPlayerInt
+            // 
+            this.lblPlayerInt.AutoSize = true;
+            this.lblPlayerInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerInt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblPlayerInt.Location = new System.Drawing.Point(170, 281);
+            this.lblPlayerInt.Name = "lblPlayerInt";
+            this.lblPlayerInt.Size = new System.Drawing.Size(57, 20);
+            this.lblPlayerInt.TabIndex = 25;
+            this.lblPlayerInt.Text = "label1";
+            // 
+            // lblPlayerWis
+            // 
+            this.lblPlayerWis.AutoSize = true;
+            this.lblPlayerWis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerWis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblPlayerWis.Location = new System.Drawing.Point(170, 301);
+            this.lblPlayerWis.Name = "lblPlayerWis";
+            this.lblPlayerWis.Size = new System.Drawing.Size(57, 20);
+            this.lblPlayerWis.TabIndex = 24;
+            this.lblPlayerWis.Text = "label1";
+            // 
+            // lblPlayerChar
+            // 
+            this.lblPlayerChar.AutoSize = true;
+            this.lblPlayerChar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerChar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblPlayerChar.Location = new System.Drawing.Point(170, 321);
+            this.lblPlayerChar.Name = "lblPlayerChar";
+            this.lblPlayerChar.Size = new System.Drawing.Size(57, 20);
+            this.lblPlayerChar.TabIndex = 23;
+            this.lblPlayerChar.Text = "label1";
+            // 
+            // lblPlayerLuck
+            // 
+            this.lblPlayerLuck.AutoSize = true;
+            this.lblPlayerLuck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerLuck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblPlayerLuck.Location = new System.Drawing.Point(49, 343);
+            this.lblPlayerLuck.Name = "lblPlayerLuck";
+            this.lblPlayerLuck.Size = new System.Drawing.Size(57, 20);
+            this.lblPlayerLuck.TabIndex = 22;
+            this.lblPlayerLuck.Text = "label1";
+            // 
+            // lblPlayerCon
+            // 
+            this.lblPlayerCon.AutoSize = true;
+            this.lblPlayerCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlayerCon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.lblPlayerCon.Location = new System.Drawing.Point(50, 321);
+            this.lblPlayerCon.Name = "lblPlayerCon";
+            this.lblPlayerCon.Size = new System.Drawing.Size(57, 20);
+            this.lblPlayerCon.TabIndex = 21;
+            this.lblPlayerCon.Text = "label1";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label16.Location = new System.Drawing.Point(3, 343);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(52, 20);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "Luck:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label15.Location = new System.Drawing.Point(122, 321);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 20);
+            this.label15.TabIndex = 19;
+            this.label15.Text = "Char:";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label14.Location = new System.Drawing.Point(122, 301);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(43, 20);
+            this.label14.TabIndex = 18;
+            this.label14.Text = "Wis:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label12.Location = new System.Drawing.Point(122, 278);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(36, 20);
+            this.label12.TabIndex = 17;
+            this.label12.Text = "Int:";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label10.Location = new System.Drawing.Point(3, 321);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(46, 20);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "Con:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblPlayerDamage
             // 
@@ -457,22 +573,23 @@
             this.btnSimpleAttack.UseVisualStyleBackColor = false;
             this.btnSimpleAttack.Click += new System.EventHandler(this.btnSimpleAttack_Click);
             // 
-            // btnMagicAttack
+            // btnWeakenAttack
             // 
-            this.btnMagicAttack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnMagicAttack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMagicAttack.Location = new System.Drawing.Point(305, 202);
-            this.btnMagicAttack.Name = "btnMagicAttack";
-            this.btnMagicAttack.Size = new System.Drawing.Size(86, 46);
-            this.btnMagicAttack.TabIndex = 14;
-            this.btnMagicAttack.Text = "Magic Attack";
-            this.btnMagicAttack.UseVisualStyleBackColor = false;
+            this.btnWeakenAttack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnWeakenAttack.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnWeakenAttack.Location = new System.Drawing.Point(306, 198);
+            this.btnWeakenAttack.Name = "btnWeakenAttack";
+            this.btnWeakenAttack.Size = new System.Drawing.Size(86, 46);
+            this.btnWeakenAttack.TabIndex = 14;
+            this.btnWeakenAttack.Text = "Weaken";
+            this.btnWeakenAttack.UseVisualStyleBackColor = false;
+            this.btnWeakenAttack.Click += new System.EventHandler(this.btnWeakenAttack_Click);
             // 
             // btnRun
             // 
             this.btnRun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRun.Location = new System.Drawing.Point(306, 257);
+            this.btnRun.Location = new System.Drawing.Point(306, 299);
             this.btnRun.Name = "btnRun";
             this.btnRun.Size = new System.Drawing.Size(86, 46);
             this.btnRun.TabIndex = 15;
@@ -502,120 +619,17 @@
             this.tmrEnemyDamage.Interval = 20;
             this.tmrEnemyDamage.Tick += new System.EventHandler(this.tmrEnemyDamage_Tick);
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label10.Location = new System.Drawing.Point(3, 321);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(46, 20);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Con:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label12.Location = new System.Drawing.Point(122, 278);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(36, 20);
-            this.label12.TabIndex = 17;
-            this.label12.Text = "Int:";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label14.Location = new System.Drawing.Point(122, 301);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(43, 20);
-            this.label14.TabIndex = 18;
-            this.label14.Text = "Wis:";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label15.Location = new System.Drawing.Point(122, 321);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(52, 20);
-            this.label15.TabIndex = 19;
-            this.label15.Text = "Char:";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.label16.Location = new System.Drawing.Point(3, 343);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 20);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "Luck:";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // lblPlayerCon
-            // 
-            this.lblPlayerCon.AutoSize = true;
-            this.lblPlayerCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerCon.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblPlayerCon.Location = new System.Drawing.Point(50, 321);
-            this.lblPlayerCon.Name = "lblPlayerCon";
-            this.lblPlayerCon.Size = new System.Drawing.Size(57, 20);
-            this.lblPlayerCon.TabIndex = 21;
-            this.lblPlayerCon.Text = "label1";
-            // 
-            // lblPlayerLuck
-            // 
-            this.lblPlayerLuck.AutoSize = true;
-            this.lblPlayerLuck.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerLuck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblPlayerLuck.Location = new System.Drawing.Point(49, 343);
-            this.lblPlayerLuck.Name = "lblPlayerLuck";
-            this.lblPlayerLuck.Size = new System.Drawing.Size(57, 20);
-            this.lblPlayerLuck.TabIndex = 22;
-            this.lblPlayerLuck.Text = "label1";
-            // 
-            // lblPlayerChar
-            // 
-            this.lblPlayerChar.AutoSize = true;
-            this.lblPlayerChar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerChar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblPlayerChar.Location = new System.Drawing.Point(170, 321);
-            this.lblPlayerChar.Name = "lblPlayerChar";
-            this.lblPlayerChar.Size = new System.Drawing.Size(57, 20);
-            this.lblPlayerChar.TabIndex = 23;
-            this.lblPlayerChar.Text = "label1";
-            // 
-            // lblPlayerWis
-            // 
-            this.lblPlayerWis.AutoSize = true;
-            this.lblPlayerWis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerWis.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblPlayerWis.Location = new System.Drawing.Point(170, 301);
-            this.lblPlayerWis.Name = "lblPlayerWis";
-            this.lblPlayerWis.Size = new System.Drawing.Size(57, 20);
-            this.lblPlayerWis.TabIndex = 24;
-            this.lblPlayerWis.Text = "label1";
-            // 
-            // lblPlayerInt
-            // 
-            this.lblPlayerInt.AutoSize = true;
-            this.lblPlayerInt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayerInt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblPlayerInt.Location = new System.Drawing.Point(170, 281);
-            this.lblPlayerInt.Name = "lblPlayerInt";
-            this.lblPlayerInt.Size = new System.Drawing.Size(57, 20);
-            this.lblPlayerInt.TabIndex = 25;
-            this.lblPlayerInt.Text = "label1";
+            // Attack2
+            //
+            this.Attack2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            this.Attack2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Attack2.Location = new System.Drawing.Point(306, 250);
+            this.Attack2.Name = "Attack2";
+            this.Attack2.Size = new System.Drawing.Size(86, 43);
+            this.Attack2.TabIndex = 17;
+            this.Attack2.Text = "Big Move";
+            this.Attack2.UseVisualStyleBackColor = false;
+            this.Attack2.Click += new System.EventHandler(this.btnAttack2_Click);
             // 
             // FrmArena
             // 
@@ -623,9 +637,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(706, 501);
+            this.Controls.Add(this.Attack2);
             this.Controls.Add(this.lblEndFightMessage);
             this.Controls.Add(this.btnRun);
-            this.Controls.Add(this.btnMagicAttack);
+            this.Controls.Add(this.btnWeakenAttack);
             this.Controls.Add(this.btnSimpleAttack);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -671,7 +686,7 @@
     private System.Windows.Forms.Label lblEnemyLevel;
     private System.Windows.Forms.Label label7;
     private System.Windows.Forms.Button btnSimpleAttack;
-    private System.Windows.Forms.Button btnMagicAttack;
+    private System.Windows.Forms.Button btnWeakenAttack;
     private System.Windows.Forms.Button btnRun;
     private System.Windows.Forms.Label lblEndFightMessage;
     private System.Windows.Forms.Label label5;
@@ -680,15 +695,16 @@
     private System.Windows.Forms.Label lblEnemyDamage;
     private System.Windows.Forms.Timer tmrPlayerDamage;
     private System.Windows.Forms.Timer tmrEnemyDamage;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblPlayerInt;
-        private System.Windows.Forms.Label lblPlayerWis;
-        private System.Windows.Forms.Label lblPlayerChar;
-        private System.Windows.Forms.Label lblPlayerLuck;
-        private System.Windows.Forms.Label lblPlayerCon;
+    private System.Windows.Forms.Label label16;
+    private System.Windows.Forms.Label label15;
+    private System.Windows.Forms.Label label14;
+    private System.Windows.Forms.Label label12;
+    private System.Windows.Forms.Label label10;
+    private System.Windows.Forms.Label lblPlayerInt;
+    private System.Windows.Forms.Label lblPlayerWis;
+    private System.Windows.Forms.Label lblPlayerChar;
+    private System.Windows.Forms.Label lblPlayerLuck;
+    private System.Windows.Forms.Label lblPlayerCon;
+    private System.Windows.Forms.Button Attack2;
     }
 }

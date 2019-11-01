@@ -122,12 +122,44 @@ namespace GameLibrary {
             Health = MaxHealth;
             Mana = MaxMana;
         }
-        public void SimpleAttack(Mortal receiver) {
+        public void SimpleAttack(Mortal receiver) 
+        {
+            if(Str <= 0)
+            {
+                return;
+            }
             float baseDamage = Math.Abs(Str * 1.2f - receiver.Def);
             float randMax = 1 + SIMPLEATTACK_RANDOM_AMT;
             float randMin = 1 - SIMPLEATTACK_RANDOM_AMT;
             float randMult = (float)(rand.NextDouble() * (randMax - randMin)) + randMin;
             receiver.Health -= (baseDamage * randMult);
+        }
+        public void Attack2(Mortal receiver)
+        {
+            if(Mana != 0)
+            {
+                float baseDamage = (float) Math.Abs(Mana * .75 + Level);
+                receiver.Health -= baseDamage;
+                Mana = 0;
+            }
+            return;
+           
+        }
+        /*
+        //function to check if characters stats are below 0 ie mana,strength,etc
+        public void statCheck(Mortal Character, Mortal receiver)
+        {
+            if(Character)
+        }
+        */
+        public void WeakenAttack(Mortal receiver)
+        {
+            if (receiver.Str <= 0 )
+            {
+                return;
+            }
+            receiver.Str -= 1;
+            Mana -= 10;
         }
     }
 }
