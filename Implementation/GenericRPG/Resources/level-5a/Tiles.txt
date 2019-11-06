@@ -1,0 +1,12 @@
+0 path pokemongrass
+1 wall pokemonbush
+2 start pokemongrass
+3 outportal 4 level-4a pokemonhole
+4 outportal 4 level-4b pokemonhole
+5 outportal 5 level-6 pokemonhole
+f path pokemonflowers
+w wall pokemonwall
+r wall pokemonroof
+a outportal a level-5b pokemondoor
+b outportal b level-5b pokemondoor
+c outportal c level-5b pokemondoor

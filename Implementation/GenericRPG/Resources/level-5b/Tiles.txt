@@ -1,0 +1,20 @@
+0 path blank
+2 start blank
+w wall mariowall
+a outportal a level-5a mariopipe
+b outportal b level-5a mariopipe
+c outportal c level-5a mariopipe
+d inportal D mariopipe
+D inportal d mariopipe
+e inportal E mariopipe
+E inportal e mariopipe
+f inportal F mariopipe
+F inportal f mariopipe
+g inportal G mariopipe
+G inportal g mariopipe
+h inportal H mariopipe
+H inportal h mariopipe
+i inportal I mariopipe
+I inportal i mariopipe
+j inportal J mariopipe
+J inportal j mariopipe

@@ -15,6 +15,43 @@ C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\Gener
 C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\GenericRPG\obj\Debug\GenericRPG.csproj.CopyComplete
 C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\GenericRPG\obj\Debug\GenericRPG.exe
 C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\GenericRPG\obj\Debug\GenericRPG.pdb
+<<<<<<< HEAD
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\levelup.wav
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\GenericRPG.exe.config
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\GenericRPG.exe
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\GenericRPG.pdb
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\GameLibrary.dll
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\GameLibrary.pdb
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.csprojAssemblyReference.cache
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmArena.resources
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmGameOver.resources
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmLevelUp.resources
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.FrmMap.resources
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.Properties.Resources.resources
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.csproj.GenerateResource.cache
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.csproj.CopyComplete
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.exe
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.pdb
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-2\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-2\Tiles.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-1\Tiles.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-1\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\cobblestone.png
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\netherportal.png
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\obsidian.png
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-3a\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-3a\Tiles.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-3b\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-3b\Tiles.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-4b\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-4b\Tiles.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-4a\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-4a\Tiles.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-5a\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-5a\Tiles.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-5b\Map.txt
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level-5b\Tiles.txt
+=======
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\levelup.wav
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\Resources\level.txt
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GenericRPG\bin\Debug\GenericRPG.exe.config
@@ -32,3 +69,4 @@ C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debu
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.csproj.CopyComplete
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.exe
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GenericRPG\obj\Debug\GenericRPG.pdb
+>>>>>>> 697cf9020af598c0ed5ebf0ebd12385811048601

@@ -1,0 +1,7 @@
+0 path animalcrossinggrass
+1 wall animalcrossingrock
+2 start animalcrossinggrass
+3 outportal 3 level-3a animalcrossinghole
+4 outportal b level-4a animalcrossinghole
+5 outportal 2 level-2 animalcrossinghole
+6 outportal 3 level-4b animalcrossinghole

@@ -3,8 +3,16 @@ C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\GameL
 C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\GameLibrary\obj\Debug\GameLibrary.csprojAssemblyReference.cache
 C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\GameLibrary\obj\Debug\GameLibrary.dll
 C:\Users\zclou\Desktop\scrum\TeamYellowSprintProject-master\Implementation\GameLibrary\obj\Debug\GameLibrary.pdb
+<<<<<<< HEAD
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GameLibrary\bin\Debug\GameLibrary.dll
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GameLibrary\bin\Debug\GameLibrary.pdb
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GameLibrary\obj\Debug\GameLibrary.dll
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GameLibrary\obj\Debug\GameLibrary.pdb
+C:\Users\samue\Documents\CSC 403\scrum project\TeamYellowSprintProject\Implementation\GameLibrary\obj\Debug\GameLibrary.csprojAssemblyReference.cache
+=======
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GameLibrary\bin\Debug\GameLibrary.dll
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GameLibrary\bin\Debug\GameLibrary.pdb
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GameLibrary\obj\Debug\GameLibrary.csprojAssemblyReference.cache
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GameLibrary\obj\Debug\GameLibrary.dll
 C:\Users\Brad\Desktop\TeamYellowSprintProject\Implementation\GameLibrary\obj\Debug\GameLibrary.pdb
+>>>>>>> 697cf9020af598c0ed5ebf0ebd12385811048601

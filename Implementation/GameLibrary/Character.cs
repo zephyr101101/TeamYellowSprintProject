@@ -20,17 +20,14 @@ namespace GameLibrary {
     /// This represents our player in our game
     /// </summary>
     public class Character : Mortal {
-        public PictureBox Pic { get; private set; }
+        public PictureBox Pic { get; set; }
         private Position pos;
-        private Map map;
         public float XP { get; private set; }
         public bool ShouldLevelUp { get; private set; }
 
-        
-        public Character(PictureBox pb, Position pos, Map map) : base("Player 1", 1) {
+        public Character(PictureBox pb, Position pos) : base("Player 1", 1) {
             Pic = pb;
             this.pos = pos;
-            this.map = map;
             ShouldLevelUp = false;
         }
         /// <summary>
@@ -60,9 +57,9 @@ namespace GameLibrary {
 
    
         public void BackToStart() {
-            pos.row = map.CharacterStartRow;
-            pos.col = map.CharacterStartCol;
-            Position topleft = map.RowColToTopLeft(pos);
+            pos.row = Map.CurrentMap.CharacterStartRow;
+            pos.col = Map.CurrentMap.CharacterStartCol;
+            Position topleft = Map.RowColToTopLeft(pos);
             Pic.Left = topleft.col;
             Pic.Top = topleft.row;
         }
@@ -96,12 +93,13 @@ namespace GameLibrary {
                     newPos.col++;
                     break;
             }
-            // Checks if pos we want to move to is valid
-            if (map.IsValidPos(newPos)) {
-                pos = newPos;
-                Position topleft = map.RowColToTopLeft(pos);
+            Position? newNewPos = Map.CurrentMap.Enter(newPos);
+            if (newNewPos != null) {
+                pos = (Position) newNewPos;
+                Position topleft = Map.RowColToTopLeft(pos);
                 Pic.Left = topleft.col;
                 Pic.Top = topleft.row;
+                Pic.BackgroundImage = Map.CurrentMap.GetBackgroundImage(pos);
             }
         }
         
