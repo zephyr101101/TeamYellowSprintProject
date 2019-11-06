@@ -79,8 +79,8 @@ namespace GenericRPG {
     {
             if (enemy.Health <= 0)
             {
-                character.GainXP(enemy.XpDropped);
-                lblEndFightMessage.Text = "You Gained " + Math.Round(enemy.XpDropped) + " xp!";
+                int XPreward = character.GainXP(enemy.XpDropped, enemy.Level, character.Level);
+                lblEndFightMessage.Text = "You Gained " + XPreward + " xp!";
                 lblEndFightMessage.Visible = true;
                 Refresh();
                 Thread.Sleep(1200);
