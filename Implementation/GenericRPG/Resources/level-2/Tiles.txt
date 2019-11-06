@@ -1,0 +1,8 @@
+0 path minecraftgrass
+1 wall cobblestone
+2 start minecraftgrass
+3 outportal 2 level-1 netherportal
+4 inportal 6 netherportal
+5 outportal 2 level-3a netherportal
+6 inportal 4 netherportal
+7 outportal 2 level-3b netherportal

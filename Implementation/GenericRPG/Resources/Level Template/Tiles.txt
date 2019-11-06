@@ -1,0 +1,34 @@
+[MapCharacter] [FunctionWord] [Parameter(s)] [ImageFilePath] [Comments]
+
+[MapCharacter] is the character used in map.txt for the level
+
+[FunctionWord] describes the function of the tile; it can be:
+	path (walkable tile, nothing happens)
+	wall (unwalkable tile)
+	inportal (transports the player to another position within the level)
+	outportal (transports the player to a position within a different level)
+	start (where the player should start in the level by default; only one character should be this and this character should only be used once)
+
+[ImageFilePath] specifies the file path for the image that should be displayed as the tile (using "blank" will make no image show)
+
+[Parameter(s)] are any parameters taken by the FunctionWord:
+	inportal takes [MapCharacter] and outportal takes [MapCharacter] [Level];
+	[MapCharacter] defines the mapcharacter that receives the character in the given level (should only be used once in that level map)
+	[Level] defines which level the player will be sent to; if left blank, the level is assumed to be this level
+
+[Comments] should be used for clarification and will not affect the map
+
+file and level names cannot have spaces in them or it will break
+
+for example:
+
+S start blank
+0 path blank
+1 wall wall.png
+A inportal 3 demonic\portal.png
+3 inportal A demonic\portal.png A and 3 are portals to each other within this same level
+C outportal X level-3 level-3-portal.jpg C takes the player to level 3, at the character labeled level 3
+
+
+
+	

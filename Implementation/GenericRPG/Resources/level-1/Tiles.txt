@@ -1,0 +1,6 @@
+0 path blank
+1 wall mariowall
+2 start blank
+3 outportal 2 level-2 mariopipe
+4 inportal 5 mariopipe
+5 inportal 4 mariopipe

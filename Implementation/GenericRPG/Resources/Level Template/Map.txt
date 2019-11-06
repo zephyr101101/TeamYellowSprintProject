@@ -1,0 +1,11 @@
+grid of characters
+- must be rectangular
+- can be any normal character (no linebreaks etc.)
+for example:
+111111111111111111
+1e0000133eeeeee111
+111101111011111111
+13eee222001111e111
+111101000010010111
+100001111000000001
+111111111111111111
