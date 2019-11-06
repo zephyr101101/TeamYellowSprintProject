@@ -225,7 +225,7 @@ namespace GameLibrary {
                 Game.GetGame().ChangeState(GameState.FIGHTING);
             }
             else {
-                encounterChance -= 0.10;
+                encounterChance += 0.10;
             }
 
             // return the new position
